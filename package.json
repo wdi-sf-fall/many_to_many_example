@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.9.8",
+    "pg": "^3.6.1",
     "sequelize": "^2.0.0-rc2",
     "sequelize-cli": "^0.3.3"
   }

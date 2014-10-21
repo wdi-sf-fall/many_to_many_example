@@ -1,0 +1,12 @@
+- npm init
+- npm install --save express sequelize sequelize-cli
+- .gitignore node_modules
+- sqlize init
+- update config.json to postgres
+- createdb many_to_many_dev
+- start an app.js and run with node
+- oops, npm install --save pg
+- sqlize model:create --name Person --attributes name:string
+- sqlize model:create --name Group --attributes title:string
+- sqlize db:migrate
+- sqlize model:create --name GroupsPeople --attributes GroupId:integer,PersonId:integer

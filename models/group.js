@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
-        Group.hasMany(models.Person);
+        Group.hasMany(models.Person, {onDelete: "NO ACTION"});
       }
     }
   });

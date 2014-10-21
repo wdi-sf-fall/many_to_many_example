@@ -9,10 +9,14 @@ module.exports = {
         type: DataTypes.INTEGER
       },
       GroupId: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        references: "Groups",
+        referencesKey: "id"
       },
       PersonId: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        references: "People",
+        referencesKey: "id"
       },
       createdAt: {
         allowNull: false,
